@@ -7,12 +7,11 @@ link do publicado:
 https://eeadoniasfilho.github.io/exemplocards/
 
 
-<div>
-<a href="https://www.youtube.com/embed/eyCIzWetKCs"><img src="octocat-black.png" ></a>
-<hr>
-<p>Clique no OctoCat estilo MIB para ver o Vídeo</p>
-</p>
 
+| | |
+| ------------- | ------------- |
+| <a href="https://www.youtube.com/embed/eyCIzWetKCs"><img src="octocat-black.png" ></a>  | <h3> Clique no OctoCat estilo MIB para ver o Vídeo</h3>  |
+<hr>
 
 
 
