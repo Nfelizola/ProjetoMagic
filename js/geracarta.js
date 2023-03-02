@@ -12,7 +12,7 @@ function getcard(url,n) {
     .then(response => response.json())
     .then(data => {
       document.getElementById('o'+n).src=data.image_uris.png;
-      document.getElementById('c'+n).src=data.image_uris.small;
+      document.getElementById('c'+n).src=data.image_uris.border_crop;
       }
       )
   
