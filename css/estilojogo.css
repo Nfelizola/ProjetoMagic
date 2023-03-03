@@ -31,6 +31,7 @@ neste caso valores que servirão de base para criar o tamanho de cada carta */
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  flex-wrap: wrap;
   padding: 0 36px;
   perspective: 2500px;
   margin: 0 2px;
