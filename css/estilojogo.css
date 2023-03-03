@@ -21,7 +21,7 @@ neste caso valores que servirão de base para criar o tamanho de cada carta */
   display: flex;
   justify-content: center;
   align-items: center;
-  fex-wrap: wrap;
+  flex-wrap: wrap;
   background: #191c29;
 }
 .card {
