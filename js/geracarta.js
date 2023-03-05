@@ -13,7 +13,7 @@ function getcard(url,n) {
  const sorteio = fetch(`${url}`)
     .then(response => response.json())
     .then(data => {
-      getimgtraduzida(data.image.set,)
+      
       document.getElementById('o'+n).src=data.image_uris.png;
       document.getElementById('c'+n).src=data.image_uris.art_crop;
       
