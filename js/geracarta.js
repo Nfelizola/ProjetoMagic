@@ -26,9 +26,8 @@ function getcard(url,n) {
 
 
 botaoiniciar.addEventListener('click', () => {
-var qtdland= parseInt(Math.random()*4);
-alert("Lands: " + qtdland);
-for (i = qtdland+1; i <8; i++) {
+
+for (i = 1; i=7; i++) {
   console.log(i);
   getcard(urlapirandomica,i);
 }
