@@ -33,8 +33,9 @@ neste caso valores que servirão de base para criar o tamanho de cada carta */
   align-items: flex-end;
   flex-wrap: wrap;
   padding: 0 36px;
-  perspective: 2500px;
-  margin: 0 2px;
+  perspective: 250px;
+  margin: 0 8px;
+  
 }
 .cover-image {
   width: 100%;
