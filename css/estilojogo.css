@@ -1,7 +1,7 @@
 /* na seção Root: Raiz definimos algumas variáveis isto mesmo variáveis,
 neste caso valores que servirão de base para criar o tamanho de cada carta */
 :root {
-    --card-height: 100px;
+    --card-height: 220px;
   --card-width: calc(var(--card-height) / 1.5);
 }
 * {
@@ -17,7 +17,9 @@ neste caso valores que servirão de base para criar o tamanho de cada carta */
 .jogo {
   width: 100vw;
   height: 100vh;
-  margin: 0;
+  max-width : 1480px;
+  max-height:  500px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +29,7 @@ neste caso valores que servirão de base para criar o tamanho de cada carta */
 .card {
   width: var(--card-width);
   height: var(--card-height);
+ 
   position: relative;
   display: flex;
   justify-content: center;
