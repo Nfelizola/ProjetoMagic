@@ -3,7 +3,7 @@
 /*
 https://api.scryfall.com/cards/dom/2/pt
 */
-const urlbase = "https://api.scryfall.com/cards/"
+
 const urlapirandomica = "https://api.scryfall.com/cards/random";
 
 
@@ -35,6 +35,20 @@ function gettraduzida(s,m,n){
   
 }
 
+function getpexels(){
+  var getpx = fetch('https://api.pexels.com/v1/curated', {
+   method: "GET",
+   headers: {"Content-type": "application/json; charset=UTF-8","Authorization":"aHxLL1lkSTzsZmbIwAaf2a5ad84fsOswkifgE4wKmyZXNStxNrXJX0lp"})
+    .then(response => response.json())
+    .then(data =>{
+      alert(data);
+    })
+ 
+}
+
+
+
+
  function getcartneo(url,i){
   const sorte = fetch(`${url}`)
     .then(response => response.json())
@@ -50,6 +64,8 @@ function gettraduzida(s,m,n){
 
 
 botaoiniciar.addEventListener('click', () => {
+  getpexels();
+   
   for (i = 1; i < 8; i++) {
     var moeda = parseInt(Math.random() * 2)
     var land = 283+ parseInt(Math.random() * 11)
