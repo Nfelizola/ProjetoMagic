@@ -5,16 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/estilojogo.css">
+ <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  --> 
+  <link rel="icon" type="image/x-icon" href="octocat-black2.png">
   <title>Document</title>
   <script defer src="./js/geracarta.js"></script>
 </head>
 <body>
-  <div class="botoes">
-    <button id ="botaoiniciar" >Cartas &lt;</button>
-    <button id ="botaopexel" >Back &lt;</button>
-    <button id ="comprar1" >Draw &lt;</buttin>
+  <div class="painelbotoes">
+    <button id ="botaoiniciar"  class="btn btn-primary"><i class="bi-arrow-down-circle">..Start</i></button>
+    <button id ="botaopexel" class="btn btn-secondary"><i class="bi-arrow-down-circle">..Back</i></button>
+    <button id ="comprar1"  class="btn btn-success"><i class="bi-arrow-down-circle">+1 Carta</i></button>
   </div>
-  <img src=# class="drawcard" id="draw">
+ <img src=# class="drawcard" class="card" class="wrapper" id="draw">
   <div class="jogo" id="playmat">
   <div  class="card"> 
     <div class="wrapper">
