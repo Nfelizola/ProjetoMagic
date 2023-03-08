@@ -18,9 +18,23 @@ neste caso valores que servirão de base para criar o tamanho de cada carta */
   margin:0px;
   padding: 0;
   border: none;
-
-  
 }
+
+.drawcard{
+  display:block;
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  border-width: 1px;
+  width: var(--card-width);
+  height: var(--card-height);
+  margin:0px;
+  padding: 0;
+  visibility: hidden;
+  border: none;
+}
+
+
 .jogo {
   width: 100vw;
   height: 100vh;
