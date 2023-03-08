@@ -1,41 +1,46 @@
 /* na seção Root: Raiz definimos algumas variáveis isto mesmo variáveis,
 neste caso valores que servirão de base para criar o tamanho de cada carta */
 :root {
-    --card-height: 220px;
+    --card-height: 320px;
   --card-width: calc(var(--card-height) / 1.5);
 }
 * {
   box-sizing: border-box;
+  margin:0px;
+  padding:0px;
 }
 .botoes{
-  position: absolute;
+  position: relative;
+  border-width: 1px;
   display: block;
-  top: 30px;
-  left: 120px;
+  top: 0px;
+  left: 0px;
+  margin:0px;
+  padding: 0;
+  border: none;
 
+  
 }
 .jogo {
   width: 100vw;
   height: 100vh;
-  max-width : 1480px;
-  max-height:  500px;
-  margin-top: 50px;
+  margin-top: 2px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   flex-wrap: wrap;
   background: #191c29;
-}
+  background-size: cover;
+ }
 .card {
   width: var(--card-width);
   height: var(--card-height);
- 
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: end;
   flex-wrap: wrap;
-  padding: 0 36px;
+  padding: 0 8px;
   perspective: 250px;
   margin: 0 8px;
   

@@ -5,7 +5,7 @@ https://api.scryfall.com/cards/dom/2/pt
 */
 
 const urlapirandomica = "https://api.scryfall.com/cards/random";
-
+const urlbase = "https://api.scryfall.com/cards/"
 
 // let searchPokemon = 1;
 // let mtg=386616;
@@ -28,6 +28,7 @@ function gettraduzida(s,m,n){
     .then(data => {
       document.getElementById('o'+n).src=data.image_uris.png;
       document.getElementById('c'+n).src=data.image_uris.small;
+      getpexels;
   
       }
       
@@ -36,14 +37,19 @@ function gettraduzida(s,m,n){
 }
 
 function getpexels(){
+  var pos = Math.floor(Math.random() * 15);
+ 
+
   var getpx = fetch('https://api.pexels.com/v1/curated', {
-   method: "GET",
-   headers: {"Content-type": "application/json; charset=UTF-8","Authorization":"aHxLL1lkSTzsZmbIwAaf2a5ad84fsOswkifgE4wKmyZXNStxNrXJX0lp"})
+   method: 'GET',
+   headers: {'Authorization':'aHxLL1lkSTzsZmbIwAaf2a5ad84fsOswkifgE4wKmyZXNStxNrXJX0lp'}})
     .then(response => response.json())
     .then(data =>{
-      alert(data);
+      var urlcompos = data.photos[pos].src.large;
+      document.getElementById('playmat').style.backgroundImage='url('+urlcompos+')';
+
     })
- 
+    
 }
 
 
@@ -64,8 +70,6 @@ function getpexels(){
 
 
 botaoiniciar.addEventListener('click', () => {
-  getpexels();
-   
   for (i = 1; i < 8; i++) {
     var moeda = parseInt(Math.random() * 2)
     var land = 283+ parseInt(Math.random() * 11)
@@ -83,6 +87,8 @@ botaoiniciar.addEventListener('click', () => {
   })
 
 
+  botaopexel.addEventListener('click', () => {
+    getpexels()})
 
 
 
