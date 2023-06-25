@@ -67,6 +67,9 @@ function getpexels(){
       )
  } 
 
+ 
+
+ 
  function drawneo(url){
   const sorte = fetch(`${url}`)
     .then(response => response.json())
@@ -115,5 +118,5 @@ comprar1.addEventListener('click', () => {
        }
         let urlneo = urlbase+'neo/'+nx+'/pt';
         drawneo(urlneo,i);
-    
+        drawdragon();
       })
